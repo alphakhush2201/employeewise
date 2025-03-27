@@ -1,7 +1,11 @@
 # EmployWise - Employee Management System
-
+Submitted by:
+- Name: Khushwant Singh Chouhan 
+- Email: Khushwant.ksc.in@gmail.com
+- Portfolio: https://portfolio-sandy-kappa-77.vercel.app
 ## Overview
-EmployWise is a React-based employee management system featuring authentication, CRUD operations, and responsive design. This application provides a comprehensive solution for managing employee data efficiently.
+Create an employee management system using React.js, React Router, Tailwind CSS, Vite, and Lucide React. This system will allow users to manage employee records efficiently. 
+all tasks are done according to the requirements.
 
 ## Features
 - **Authentication System** - Secure login functionality
@@ -32,12 +36,7 @@ Use the following credentials:
 - Utilize the search function to find specific employees
 - Perform employee management operations (add, edit, delete)
 
-## Deployment Options
-
-
-
-
-
 ## Demo
+https://employeewise-two.vercel.app 
 
 
