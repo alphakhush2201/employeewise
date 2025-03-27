@@ -1,18 +1,6 @@
-/**
- * Employees API service
- * Handles CRUD operations for employee data
- */
-
 import { API_BASE_URL, commonHeaders, getAuthHeader } from './config';
 
 export const employeesApi = {
-  /**
-   * Get all employees with pagination
-   * @param {string} token - Authentication token
-   * @param {number} page - Page number (default: 1)
-   * @param {number} perPage - Items per page (default: 6)
-   * @returns {Promise<Object>} - Paginated list of employees with metadata
-   */
   getAll: async (token, page = 1, perPage = 6) => {
     try {
       const response = await fetch(`${API_BASE_URL}/users?page=${page}&per_page=${perPage}`, {
@@ -41,12 +29,6 @@ export const employeesApi = {
     }
   },
 
-  /**
-   * Get employee by ID
-   * @param {string} id - Employee ID
-   * @param {string} token - Authentication token
-   * @returns {Promise<Object>} - Employee data
-   */
   getById: async (id, token) => {
     try {
       const response = await fetch(`${API_BASE_URL}/users/${id}`, {
@@ -69,12 +51,6 @@ export const employeesApi = {
     }
   },
 
-  /**
-   * Create new employee
-   * @param {Object} employeeData - Employee data
-   * @param {string} token - Authentication token
-   * @returns {Promise<Object>} - Created employee data
-   */
   create: async (employeeData, token) => {
     try {
       const response = await fetch(`${API_BASE_URL}/users`, {
@@ -98,13 +74,6 @@ export const employeesApi = {
     }
   },
 
-  /**
-   * Update employee
-   * @param {string} id - Employee ID
-   * @param {Object} employeeData - Updated employee data
-   * @param {string} token - Authentication token
-   * @returns {Promise<Object>} - Updated employee data
-   */
   update: async (id, employeeData, token) => {
     try {
       const response = await fetch(`${API_BASE_URL}/users/${id}`, {
@@ -128,12 +97,6 @@ export const employeesApi = {
     }
   },
 
-  /**
-   * Delete employee
-   * @param {string} id - Employee ID
-   * @param {string} token - Authentication token
-   * @returns {Promise<void>}
-   */
   delete: async (id, token) => {
     try {
       const response = await fetch(`${API_BASE_URL}/users/${id}`, {
